@@ -3,7 +3,9 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:5000/books', {
+
+
+mongoose.connect('mongodb+srv://Daniel98:Danielprogramacionweb98@devcamp.lw3rsfg.mongodb.net/?retryWrites=true&w=majority&appName=books', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
@@ -11,5 +13,6 @@ mongoose.connect('mongodb://localhost:5000/books', {
 }).catch((err) => {
     console.error('Error connecting to MongoDB:', err);
 });
+
 
 module.exports = mongoose;
