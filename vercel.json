@@ -6,6 +6,6 @@
     {"src": "app.js", "use": "@vercel/node"}
 ],
 "routes": [
-    {"src": "/books/(.*)", "dest": "bookRoutes.js"}
+    {"src": "/books/(.*)", "dest": "app.js"}
 ]
 }
