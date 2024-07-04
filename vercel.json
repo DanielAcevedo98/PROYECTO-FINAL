@@ -3,9 +3,23 @@
 {
     "version": 2,
     "builds": [
-        {"src": "app.js", "use": "@vercel/node"}
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "public/**/*",
+        "use": "@vercel/static"
+      }
     ],
     "routes": [
-        {"src": "/public", "dest": "index.html"}
+      {
+        "src": "/",
+        "dest": "/public/index.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
     ]
-    }
+  }
