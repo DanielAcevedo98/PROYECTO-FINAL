@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const publishedDate = document.getElementById('publishedDate');
     const pages = document.getElementById('pages');
     
-    const  apiUrl = 'https://proyecto-final-kjgp.vercel.app';
+    const  apiUrl = 'https://proyecto-final-kjgp.vercel.app/api/index.js';
 
     bookForm.addEventListener('submit', async (event) => {
         event.preventDefault();
