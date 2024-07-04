@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const bookRoutes = require('../routes/bookRoutes');
-const mongoose = require('..config/config');
+const mongoose = require('../config');
 const path = require('path');
 
 const dotenv = require('dotenv');
